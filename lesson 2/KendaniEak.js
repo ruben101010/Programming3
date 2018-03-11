@@ -17,7 +17,20 @@ class KendaniEak {
         ];
 
     }
-    yntrelVandak(ch) {
+    getNewCoordinates() {
+        this.directions = [
+            [this.x - 1, this.y - 1],
+            [this.x, this.y - 1],
+            [this.x + 1, this.y - 1],
+            [this.x + 1, this.y],
+            [this.x + 1, this.y + 1],
+            [this.x, this.y + 1],
+            [this.x - 1, this.y + 1],
+            [this.x - 1, this.y],
+        ];
+    }
+
+    chooseNearFieldsByIndex(ch) {
         var found = [];
         for (var i in this.directions) {
             var x = this.directions[i][0];

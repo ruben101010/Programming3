@@ -5,26 +5,26 @@ class Amenaker {
     this.index = 4;
     this.directions = [
       [this.x - 1, this.y - 1],
-      [this.x    , this.y - 1],
+      [this.x, this.y - 1],
       [this.x + 1, this.y - 1],
-      [this.x + 1, this.y    ],
+      [this.x + 1, this.y],
       [this.x + 1, this.y + 1],
-      [this.x    , this.y + 1],
+      [this.x, this.y + 1],
       [this.x - 1, this.y + 1],
-      [this.x - 1, this.y    ],
+      [this.x - 1, this.y],
     ];
     this.energy = 90;
   }
   getNewCoordinates() {
     this.directions = [
       [this.x - 1, this.y - 1],
-      [this.x    , this.y - 1],
+      [this.x, this.y - 1],
       [this.x + 1, this.y - 1],
-      [this.x + 1, this.y    ],
+      [this.x + 1, this.y],
       [this.x + 1, this.y + 1],
-      [this.x    , this.y + 1],
+      [this.x, this.y + 1],
       [this.x - 1, this.y + 1],
-      [this.x - 1, this.y    ],
+      [this.x - 1, this.y],
     ];
   }
   chooseNearFieldsByIndex(ch) {
@@ -68,7 +68,7 @@ class Amenaker {
     }
     target = random(this.chooseNearFieldsByIndex(3));
     if (target) {
-      matrix[this. y][this.x] = 0;
+      matrix[this.y][this.x] = 0;
       this.x = target[0];
       this.y = target[1];
       matrix[this.y][this.x] = this.index;

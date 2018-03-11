@@ -3,28 +3,28 @@ class Hresh {
     this.x = x;
     this.y = y;
     this.index = 5;
-    this.directions = [
+      this.directions = [
       [this.x - 1, this.y - 1],
-      [this.x    , this.y - 1],
+      [this.x, this.y - 1],
       [this.x + 1, this.y - 1],
-      [this.x + 1, this.y    ],
+      [this.x + 1, this.y],
       [this.x + 1, this.y + 1],
-      [this.x    , this.y + 1],
+      [this.x, this.y + 1],
       [this.x - 1, this.y + 1],
-      [this.x - 1, this.y    ],
+      [this.x - 1, this.y],
     ];
     this.energy = 80;
   }
   getNewCoordinates() {
     this.directions = [
       [this.x - 1, this.y - 1],
-      [this.x    , this.y - 1],
+      [this.x, this.y - 1],
       [this.x + 1, this.y - 1],
-      [this.x + 1, this.y    ],
+      [this.x + 1, this.y],
       [this.x + 1, this.y + 1],
-      [this.x    , this.y + 1],
+      [this.x, this.y + 1],
       [this.x - 1, this.y + 1],
-      [this.x - 1, this.y    ],
+      [this.x - 1, this.y],
     ];
   }
   chooseNearFieldsByIndex(ch) {

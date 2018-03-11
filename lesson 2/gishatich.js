@@ -5,26 +5,26 @@ class Gishatich {
     this.index = 3;
     this.directions = [
       [this.x - 1, this.y - 1],
-      [this.x    , this.y - 1],
+      [this.x, this.y - 1],
       [this.x + 1, this.y - 1],
-      [this.x + 1, this.y    ],
+      [this.x + 1, this.y],
       [this.x + 1, this.y + 1],
-      [this.x    , this.y + 1],
+      [this.x, this.y + 1],
       [this.x - 1, this.y + 1],
-      [this.x - 1, this.y    ],
+      [this.x - 1, this.y],
     ];
     this.energy = 80;
   }
   getNewCoordinates() {
     this.directions = [
       [this.x - 1, this.y - 1],
-      [this.x    , this.y - 1],
+      [this.x, this.y - 1],
       [this.x + 1, this.y - 1],
-      [this.x + 1, this.y    ],
+      [this.x + 1, this.y],
       [this.x + 1, this.y + 1],
-      [this.x    , this.y + 1],
+      [this.x, this.y + 1],
       [this.x - 1, this.y + 1],
-      [this.x - 1, this.y    ],
+      [this.x - 1, this.y],
     ];
   }
   chooseNearFieldsByIndex(ch) {
@@ -52,7 +52,7 @@ class Gishatich {
   move() {
     var field = random(this.chooseNearFieldsByIndex(0));
     if (field) {
-      matrix[this.y][this.x] = 0;//this.standsOnGrass() ? 1 : 0;
+      matrix[this.y][this.x] = 0;
       this.x = field[0];
       this.y = field[1];
       matrix[this.y][this.x] = this.index;
